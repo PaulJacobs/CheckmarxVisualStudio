@@ -3,31 +3,17 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(void)
 {
-	char buff[15];
-	int pass = 0;
+	char *temp;
 
-	printf("\n Enter the password : \n");
+	temp = (char *) malloc(500);
 
-	strcmp(buff, "yadda");
-//	gets(buff);
-
-	if (strcmp(buff, "thegeekstuff"))
+	for (int i = 0; i < 1000; i++)
 	{
-		printf("\n Wrong Password \n");
-	}
-	else
-	{
-		printf("\n Correct Password \n");
-		pass = 1;
-	}
-
-	if (pass)
-	{
-		/* Now Give root or admin rights to user*/
-		printf("\n Root privileges given to the user \n");
+		temp[i] = 32;
 	}
 
 	return 0;
